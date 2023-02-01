@@ -1,0 +1,1114 @@
+﻿DBMS MINI-PROJECT REPORT
+
+
+
+
+‘DARE TO DONATE’
+-A BLOOD BANK MANAGEMENT APPLICATION SOFTWARE
+  
+
+
+
+
+
+DONE BY:
+
+
+Maria Sabi
+Joel Manuel
+Khadeeja C R
+Gokul Baburaj
+ABSTRACT
+
+
+
+
+“Dare to donate” is an application software that allows access to the whole information about blood bank management through hospitals, readily scalable and adaptable to meet the complex need of blood banks which is the key facilitator for the healthcare sector. It helps donors and receivers in communicating, as receivers can request blood and the donors may donate blood after meeting certain criteria. You can donate to ones in need and request blood if you need it. The project includes a user module. A user is given a login form to enter the login details. If they don’t have such details, then they may Register as new and will be provided with a user id and password, which identifies them uniquely. Each user can inquire about a particular blood group. If a user wants to donate, he can donate to the blood bank directly after filling out certain questions to make sure he/she is eligible or not. A user may also request blood and his details will be collected. The whole project makes work easier for every person using the software in their required category.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TABLE OF CONTENTS
+
+
+Chapter no.                                 Contents                                            Page no.
+
+
+
+
+ABSTRACT                                                                                                                
+TABLE OF CONTENTS
+
+
+1                        SOFTWARE AND HARDWARE REQUIREMENTS                4
+1.1                                SOFTWARE REQUIREMENTS                                4
+1.2                                HARDWARE REQUIREMENTS                                4
+2                        PROPOSED METHODOLOGY                                        5
+2.1                                FEATURES                                                        5
+2.2                                SIGNIFICANCE                                                6
+2.3                                FLOWCHART                                                7
+2.4                                CLASS DIAGRAM                                                9
+2.5                                PLATFORM AND IDE                                        10
+2.6                                FUTURE SCOPE                                                11
+3                        SOURCE CODE                                                        12
+3.1                                FUNCTIONS USED IN THE PROGRAM                        24
+4                        FRAMES                                                                26
+5                         CONCLUSION                                                        32
+6                        REFERENCES                                                        32
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.SOFTWARE AND HARDWARE REQUIREMENTS
+
+
+
+
+1.1 SOFTWARE REQUIREMENTS
+
+
+* Python 3 and above
+           Imported modules,
+   * tkinter
+   * Mysql.connector as mcon
+   * tkinter.messagebox 
+        
+* MySQL 
+
+
+
+
+1.2 HARDWARE REQUIREMENTS
+
+
+* Pentium 200MHZ processor
+* 4GB RAM
+* HP intel core i3 5th gen
+* Windows
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.PROPOSED METHODOLOGY
+
+
+The proposed Blood Bank management system helps people who require blood by giving them all details of blood group availability or regarding the donors with the same blood group. Our application works 24x7 so users can get information on the availability of blood at any time. Blood donors can also get registered and save the life of other people. When blood is needed for an operation or any such emergencies, then people have very less time to get the blood available so if he gets the information like who can give him blood in time in his city it is life-saving.    
+2.1 FEATURES
+
+
+* Provides effective management of blood bank, through hospitals
+* Users can log in using their email ID and password
+* If a new user, he/she may register themselves giving the following details: name, mail, password, blood type, phone number, and address
+* After logging in, the user can view the available amount of blood under each blood group 
+* The buttons present on the left side include,
+* Home button
+   * Indicates the creation of a blood request
+   * Blood request is immediately satisfied if the required blood type is available in the blood bank
+   * If sufficient blood of the type is not available, the request is added for donation
+
+
+* Search button
+   * Search for requests to satisfy an interested donor
+   * Blood donations can be made directly to a person’s request
+   * Blood donation can also be made in the blood bank of the hospital
+
+
+* User button 
+   *  View the user’s profile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.2 SIGNIFICANCE
+
+
+* The requirement of blood for surgeries, cancer treatment, chronic illnesses, and traumatic injuries has to be fulfilled.
+* The percentage of people donating blood is increasing day by day due to awareness to donate blood for those needed.
+* All hospitals require a blood bank for the proper management of blood donations.
+* ‘Dare To Donate’ is a blood bank management application software aimed to bridge the gap between interested donors and potential receivers through hospitals. 
+* It meets the complex needs of the blood bank which is the key facilitator for the health care sector; it also supports all the functionalities of blood banks. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.3 FLOWCHART
+  
+
+  
+
+
+
+
+
+
+
+
+
+2.4 CLASS DIAGRAM
+
+
+The classes are,
+* User
+* Donor
+* Receiver
+* Blood
+  
+
+
+
+
+
+2.5 PLATFORM AND IDE
+
+
+MySQL 
+          MySQL is the world's most used open-source relational database management system (RDBMS) that runs as a server providing multi-user access to several databases. It is named after co-founder Michael Widenius' daughter, My. The SQL phrase stands for Structured Query Language. The MySQL development project has made its source code available under the terms of the GNU General Public License, as well as under a variety of proprietary agreements. MySQL was owned and sponsored by a single for-profit firm, the Swedish company MySQL AB, now owned by Oracle Corporation.
+On larger scales, multi-server MySQL deployments are required to provide improved performance and reliability. A typical high-end configuration can include a powerful master database that handles data write operations and is replicated to multiple slaves that handle all read operations. The master server synchronizes continually with its slaves so in the event of failure a slave can be promoted to become the new master, minimizing downtime. Further performance improvements can be achieved by caching the results from database queries in memory using memcached or breaking down a database into smaller chunks called shards which can be spread across many distributed server clusters.
+ 
+ADVANTAGES OF MySQL
+* Easy to use
+* Security      
+* Inexpensive
+* Speed   
+* Scalable
+* Manages memory very well
+* Platform Independent
+* Supports several development interfaces
+
+
+PYTHON 
+         Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. It's high-level built-in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components. Python's simple, easy-to-learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms and can be freely distributed.
+
+
+Python tkinter
+Python provides the standard library Tkinter for creating the graphical user interface for desktop-based applications. Developing desktop-based applications with python Tkinter is not a complex task. An empty Tkinter top-level window can be created by using the following steps. Tkinter provides various controls, such as buttons, labels, and text boxes used in a GUI application. These controls are commonly called widgets
+        
+Mysql.connector
+Enables Python program to access MySQL databases
+
+
+        tkinter.messagebox 
+Provides a template base class as well as a variety of convenience methods for commonly used configurations. The message boxes are modal and will return a subset of (True, False, OK, None, Yes, No) based on the user’s selection.
+
+
+ADVANTAGES OF PYTHON
+* Python is Open Source which means it's available free of cost.
+* Python is simple and so easy to learn
+* Python is versatile and can be used to create many different things.
+* Python has powerful development libraries including AI, ML, etc.
+* Python is much in demand and ensures a high salary
+
+
+2.6 FUTURE SCOPE
+
+
+* Users can be verified via email or phone.
+* Users can edit their respective profiles, add their images, etc.
+* Users can search for a particular patient to donate blood according to their location, blood type, or name.
+* Blood requirements can be prioritized according to their urgency.
+* Blood requests can be optimized according to the donor’s and hospital’s location.
+* Units of blood required can be specified
+* Multiple hospital’s blood bank data can be centralized
+
+
+
+
+
+
+
+
+3.SOURCE CODE
+
+
+from tkinter import *
+import mysql.connector as mcon
+import tkinter.messagebox
+root = Tk()
+root.geometry("1920x1080")
+root.title("Blood donation")
+con = mcon.connect(host="localhost", user="root", password="1234")
+c = con.cursor()
+c.execute("use bloodbank")
+def login():
+    global login_b,login_i,login_f,login_c,login_na,login_pa,login_pa_i,login_na_i,register_f
+    register_f.destroy()
+    intro4_f.destroy()
+    login_i=PhotoImage(file = "login_page.png")
+    login_f = Frame(root)
+    login_f.pack()
+    login_c = Canvas(login_f, height=1080, width=1920)
+    login_c.create_image(0, 0, image=login_i, anchor="nw")
+    login_c.pack(fill="both", expand=True)
+    login_na = Entry(login_c, width=15, font=('Poppins', 27, 'normal'),bg='#D6D6D6',bd=0)
+    login_na.place(x=820, y=449)
+    login_na_i = PhotoImage(file="mail.png")
+    login_c.create_image(785, 456, image=login_na_i, anchor="nw")
+    login_pa = Entry(login_c, width=15, font=('Poppins', 27, 'normal'),bg='#D6D6D6',bd=0)
+    login_pa.place(x=820, y=540)
+        login_pa_i = PhotoImage(file="password.png")
+    login_c.create_image(785, 548, image=login_pa_i, anchor="nw")
+    login_b = PhotoImage(file="login_b2.png")
+    login_button = Button(login_c, image=login_b, borderwidth=0, command=login_sql, bg='#FFFFFF',text='LOGIN',cursor="hand2")
+    login_button.place(x=773, y=684)
+def login_sql():
+    global user_name,password,pid,name,mail,password,phoneno,bloodtype,address
+    password=login_pa.get()
+    user_name=login_na.get()
+    print(user_name,password)
+    c.execute("select * from user where mail='"+user_name+"' and password='"+password+"'")
+    ls=c.fetchall()
+    if(len(ls)!=0):
+        pid=ls[0][0]
+        name=ls[0][1]
+        mail=ls[0][2]
+        password=ls[0][3]
+        phoneno=ls[0][4]
+     bloodtype=ls[0][5]
+        address=ls[0][6]
+        print('login successful')
+        report()
+    else:
+        tkinter.messagebox.showinfo("ERROR",  "Incorrect credentials")
+    print(ls)
+def register_sql():
+    global register_na, register_pa,register_ma,register_ph,register_bl,register_ad,name,mail,password,phoneno,bloodtype,address
+    name=register_na.get()
+    mail=register_ma.get()
+    password=register_pa.get()
+    phoneno=register_ph.get()
+    bloodtype=register_bl.get()
+    address=register_ad.get()
+    str="Insert into user (name,mail,password,phoneno,bloodtype,address) values('"+name+"','"+mail+"','"+password+"','"+phoneno+"','"+bloodtype+"','"+address+"')"
+    c.execute(str)
+    con.commit()
+    login()
+def register():
+    global register_b, register_i, register_f, register_c, register_na, register_pa, register_pa_i, register_na_i,register_button,register_ma,register_ph,register_bl,register_ad, register_ad_i,register_ph_i,register_ma_i,register_bl_i
+    intro4_f.destroy()
+    register_i = PhotoImage(file="register_page.png")
+    register_f = Frame(root)
+    register_f.pack()
+    register_c = Canvas(register_f, height=1080, width=1920)
+    register_c.create_image(0, 0, image=register_i, anchor="nw")
+    register_c.pack(fill="both", expand=True)
+    register_na = Entry(register_c, width=15, font=('Poppins', 27, 'normal'), bg='#D6D6D6', bd=0)
+    register_na.place(x=810, y=319.2)
+    register_ma = Entry(register_c, width=15, font=('Poppins', 27, 'normal'), bg='#D6D6D6', bd=0)
+    register_ma.place(x=810, y=396.2)
+    register_pa = Entry(register_c, width=15, font=('Poppins', 27, 'normal'), bg='#D6D6D6', bd=0)
+    register_pa.place(x=810, y=473.2)
+    register_ph = Entry(register_c, width=15, font=('Poppins', 27, 'normal'), bg='#D6D6D6', bd=0)
+    register_ph.place(x=810, y=551.2)
+    register_bl = Entry(register_c, width=15, font=('Poppins', 27, 'normal'), bg='#D6D6D6', bd=0)
+    register_bl.place(x=810, y=628.2)
+    register_ad = Entry(register_c, width=15, font=('Poppins', 27, 'normal'), bg='#D6D6D6', bd=0)
+    register_ad.place(x=810, y=705.2)
+    register_na_i = PhotoImage(file="person.png")
+    register_c.create_image(780, 319, image=register_na_i, anchor="nw")
+    register_ma_i = PhotoImage(file="mail.png")
+    register_c.create_image(780, 396, image=register_ma_i, anchor="nw")
+    register_pa_i = PhotoImage(file="password.png")
+    register_c.create_image(780, 473, image=register_pa_i, anchor="nw")
+    register_ph_i = PhotoImage(file="phone.png")
+    register_c.create_image(780, 551, image=register_ph_i, anchor="nw")
+    register_bl_i = PhotoImage(file="blood.png")
+    register_c.create_image(780, 628, image=register_bl_i, anchor="nw")
+    register_ad_i = PhotoImage(file="address.png")
+    register_c.create_image(780, 705, image=register_ad_i, anchor="nw")
+    register_b = PhotoImage(file="register_b.png")
+    register_button = Button(register_c, image=register_b, borderwidth=0, command=register_sql, bg='#FFFFFF', text='LOGIN', cursor="hand2")
+    register_button.place(x=762, y=817)
+def dummy():
+    print('clicked')
+def intro3():
+    global intro3_i,intro3_f,intro3_ne,intro3_sk,intro3_c
+    intro2_f.destroy()
+    intro3_i=PhotoImage(file="intro3.png")
+    intro3_f = Frame(root)
+    intro3_f.pack()
+    intro3_c = Canvas(intro3_f, height=1080, width=1920)
+    intro3_c.create_image(0, 0, image=intro3_i, anchor="nw")
+    intro3_c.pack(fill="both", expand=True)
+    def sk1(event=None):
+        print('clicked1')
+        intro3_f.destroy()
+        intro4()
+    def sk2(event=None):
+        intro3_sk.config(fg='blue')
+    def sk3(event=None):
+        intro3_sk.config(fg='#3A4351')
+    def ne1(event=None):
+        print('clicked2')
+        intro3_f.destroy()
+        intro4()
+    def ne2(event=None):
+        intro3_ne.config(fg='blue')
+    def ne3(event=None):
+        intro3_ne.config(fg='red')
+    intro3_ne = Label(intro3_c, bg='#FFFFFF', fg='red', text='Next', cursor="hand2", font=('semi bold', 40, 'normal'))
+    intro3_ne.place(x=1477, y=600)
+    intro3_ne.bind("<Button-1>", ne1)
+    intro3_ne.bind("<Enter>", ne2)
+    intro3_ne.bind("<Leave>", ne3)
+    intro3_sk = Label(intro3_c, bg='#FFFFFF', fg='#3A4351', text='Skip', cursor="hand2", font=('semi bold', 40, 'normal'))
+    intro3_sk.place(x=864, y=603)
+    intro3_sk.bind("<Button-1>", sk1)
+    intro3_sk.bind("<Enter>", sk2)
+    intro3_sk.bind("<Leave>", sk3)
+def intro2():
+    global intro2_i,intro2_f,intro2_ne,intro2_sk,intro2_c
+    intro1_f.destroy()
+    intro2_i=PhotoImage(file="intro2.png")
+    intro2_f = Frame(root)
+    intro2_f.pack()
+    intro2_c = Canvas(intro2_f, height=1080, width=1920)
+    intro2_c.create_image(0, 0, image=intro2_i, anchor="nw")
+    intro2_c.pack(fill="both", expand=True)
+    def sk1(event=None):
+        print('clicked1')
+        intro2_f.destroy()
+        intro4()
+    def sk2(event=None):
+        intro2_sk.config(fg='blue')
+    def sk3(event=None):
+        intro2_sk.config(fg='#3A4351')
+    def ne1(event=None):
+        print('clicked2')
+        intro3()
+    def ne2(event=None):
+        intro2_ne.config(fg='blue')
+    def ne3(event=None):
+        intro2_ne.config(fg='red')
+    intro2_ne = Label(intro2_c, bg='#FFFFFF', fg='red', text='Next', cursor="hand2", font=('semi bold', 40, 'normal'))
+    intro2_ne.place(x=802, y=615)
+    intro2_ne.bind("<Button-1>", ne1)
+    intro2_ne.bind("<Enter>", ne2)
+    intro2_ne.bind("<Leave>", ne3)
+    intro2_sk = Label(intro2_c, bg='#FFFFFF', fg='#3A4351', text='Skip', cursor="hand2", font=('semi bold', 40, 'normal'))
+    intro2_sk.place(x=189, y=618)
+    intro2_sk.bind("<Button-1>", sk1)
+    intro2_sk.bind("<Enter>", sk2)
+    intro2_sk.bind("<Leave>", sk3)
+def intro4():
+    global intro1_f,intro4_i,intro4_f,intro4_login_bi,intro4_login_ri,intro4_c,intro4_login_b,intro4_login_r
+    print('hi')
+    intro4_i = PhotoImage(file = "intro4.png")
+    intro4_login_bi = PhotoImage(file = "login_b.png")
+    intro4_login_ri = PhotoImage(file = "register_b.png")
+    intro4_f=Frame(root)
+    intro4_f.pack()
+    intro4_c=Canvas(intro4_f,height=1080,width=1920)
+    intro4_c.create_image( 0, 0, image = intro4_i, anchor = "nw")
+    intro4_c.pack(fill = "both", expand = True)
+    intro4_login_b=Button(intro4_c, image = intro4_login_bi,borderwidth = 0,bg='#FFFFFF',command=login,cursor="hand2")
+    intro4_login_b.place(x=172,y=585)
+    intro4_login_r=Button(intro4_c, image = intro4_login_ri,borderwidth = 0,bg='#FFFFFF',command=register,cursor="hand2")
+    intro4_login_r.place(x=172,y=666)
+class donate:
+    def __init__(self,id,name,location,group,x1,y1) -> None:
+        self.id=id
+        self.name=name
+        self.location=location
+        self.group=group
+        self.block_f=Frame(search_f,height=168,width=418)
+        self.donate_b_i=PhotoImage(file = 'donate_b.png')
+        self.block=Canvas(self.block_f,height=168,width=418)
+        self.block.create_text(10, 10,text= 'name',font=('poppins',14,'normal'),fill='#7E7E7E',anchor='nw')
+        self.block.create_text(10, 35,text= self.name,font=('poppins',14,'normal'),fill='#272A2F',anchor='nw')
+        self.block.create_text(10, 70,text= 'Location :  ',font=('poppins',14,'normal'),fill='#7E7E7E',anchor='nw')
+        self.block.create_text(10, 95,text=self.location,font=('poppins',14,'normal'),fill='#272A2F',anchor='nw')
+        self.view_all_b = Button ( self.block,font=('poppins',18,'normal'),image=self.donate_b_i,text='VIEW ALL',command=lambda:donated(0,id),cursor='hand2',borderwidth = 0)
+        self.view_all_b.place(x=320,y=130)
+        str=group[0:-1]
+        if(group[-1]=='+'):
+            str=str+'P'
+        else:
+            str=str+'N'
+        print(str)
+        self.group_i=PhotoImage(file = str+'.png')
+        self.block.create_image( 350, 20, image = self.group_i, anchor = "nw")
+        self.block.pack(fill = "both")
+        self.block_f.place(x=x1,y=y1)
+    def clicked(self):
+        print(self.name)
+    def delete(self):
+        self.block_f.destroy()
+def dummy():
+    print('hi')
+def report():
+    global intro1_f,login_f,donate_f,search_f,report_f,report_i,report_c,bp,op,abp,ap,bn,on,abn,an,report_home_i,report_report_i,report_search_i,report_user_i,report_home_b,report_search_b,report_report_b
+    intro1_f.destroy()
+    login_f.destroy()
+    report_f.destroy()
+    search_f.destroy()
+    request_f.destroy()
+    donate_f.destroy()
+    profile_f.destroy()
+    report_i = PhotoImage(file = 'report.png')
+    report_user_i = PhotoImage(file = 'user.png')
+    report_search_i = PhotoImage(file = 'search.png')
+    report_report_i = PhotoImage(file = 'report_b_r.png')
+    report_home_i = PhotoImage(file = 'home.png')
+    c.execute("select * from blood")
+    ls=c.fetchall()
+    report_f=Frame(root)
+    report_f.pack()
+    report_c=Canvas(report_f,height=1080,width=1920,bg='#FFFFFF')
+    report_c.pack(fill = "both", expand = True)
+    report_c.create_image( 0, 0, image = report_i, anchor = "nw")
+    report_c.create_text(453,300,text= "B+",font=('poppins',36,'normal'), anchor = "nw")
+    report_c.create_text(739,300,text= "O+",font=('poppins',36,'normal'), anchor = "nw")
+    report_c.create_text(1015,300,text= "AB+",font=('poppins',36,'normal'), anchor = "nw")
+    report_c.create_text(1308,300,text= "A+",font=('poppins',36,'normal'), anchor = "nw")
+    report_c.create_text(453,573,text= "B-",font=('poppins',36,'normal'), anchor = "nw")
+    report_c.create_text(739,573,text= "O-",font=('poppins',36,'normal'), anchor = "nw")
+    report_c.create_text(1015,573,text= "AB-",font=('poppins',36,'normal'), anchor = "nw")
+    report_c.create_text(1308,573,text= "A-",font=('poppins',36,'normal'), anchor = "nw")
+    report_home_b=Button(report_c, image = report_home_i,borderwidth = 0,bg='#FFFFFF',command=request,cursor="hand2")
+    report_home_b.place(x=61,y=114)
+    report_search_b=Button(report_c, image = report_search_i,borderwidth = 0,bg='#FFFFFF',command=search,cursor="hand2")
+    report_search_b.place(x=61,y=326)
+    report_report_b=Button(report_c, image = report_report_i,borderwidth = 0,bg='#FFFFFF',command=report,cursor="hand2")
+    report_report_b.place(x=61,y=731)
+    report_user_b=Button(report_c, image = report_user_i,borderwidth = 0,bg='#FFFFFF',command=profile,cursor="hand2")
+    report_user_b.place(x=51,y=893)
+    bp=ls[4][1]
+    op=ls[6][1]
+    abp=ls[2][1]
+    ap=ls[0][1]
+    bn=ls[5][1]
+    on=ls[7][1]
+    abn=ls[3][1]
+    an=ls[1][1]
+    if(bp<=20):
+        height=136
+        width=256
+        x=361
+        y=378
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#FF2929',width = 2)
+        report_c.create_text(x+100,y+40,text= str(bp),font=('poppins',32,'normal'), anchor = "nw",fill='#FF2929')
+    else:
+        height=136
+        width=256
+        x=361
+        y=378
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#07B623',width = 2)
+        report_c.create_text(x+100,y+40,text= str(bp),font=('poppins',32,'normal'), anchor = "nw",fill='#07B623')
+    if(op<=20):
+        height=136
+        width=256
+        x=645
+        y=378
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#FF2929',width = 2)
+        report_c.create_text(x+100,y+40,text= str(op),font=('poppins',32,'normal'), anchor = "nw",fill='#FF2929')
+    else:
+        height=136
+        width=256
+        x=645
+        y=378
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#07B623',width = 2)
+        report_c.create_text(x+100,y+40,text= str(op),font=('poppins',32,'normal'), anchor = "nw",fill='#07B623')
+    if(abp<=20):
+        height=136
+        width=256
+        x=928
+        y=378
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#FF2929',width = 2)
+        report_c.create_text(x+100,y+40,text= str(abp),font=('poppins',32,'normal'), anchor = "nw",fill='#FF2929')
+    else:
+        height=136
+        width=256
+        x=928
+        y=378
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#07B623',width = 2)
+        report_c.create_text(x+100,y+40,text= str(abp),font=('poppins',32,'normal'), anchor = "nw",fill='#07B623')
+    if(ap<=20):
+        height=136
+        width=256
+        x=1212
+        y=378
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#FF2929',width = 2)
+        report_c.create_text(x+100,y+40,text= str(ap),font=('poppins',32,'normal'), anchor = "nw",fill='#FF2929')
+    else:
+        height=136
+        width=256
+        x=1212
+        y=378
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#07B623',width = 2)
+        report_c.create_text(x+100,y+40,text= str(ap),font=('poppins',32,'normal'), anchor = "nw",fill='#07B623')
+    if(bn<=20):
+        height=136
+        width=256
+        x=361
+        y=678
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#FF2929',width = 2)
+        report_c.create_text(x+100,y+40,text= str(bn),font=('poppins',32,'normal'), anchor = "nw",fill='#FF2929')
+    else:
+        height=136
+        width=256
+        x=361
+        y=678
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#07B623',width = 2)
+        report_c.create_text(x+100,y+40,text= str(bn),font=('poppins',32,'normal'), anchor = "nw",fill='#07B623')
+    if(on<=20):
+        height=136
+        width=256
+        x=645
+        y=678
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#FF2929',width = 2)
+        report_c.create_text(x+100,y+40,text= str(on),font=('poppins',32,'normal'), anchor = "nw",fill='#FF2929')
+    else:
+        height=136
+        width=256
+        x=645
+        y=678
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#07B623',width = 2)
+        report_c.create_text(x+100,y+40,text= str(on),font=('poppins',32,'normal'), anchor = "nw",fill='#07B623')
+    if(abn<=20):
+        height=136
+        width=256
+        x=928
+        y=678
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#FF2929',width = 2)
+        report_c.create_text(x+100,y+40,text= str(abn),font=('poppins',32,'normal'), anchor = "nw",fill='#FF2929')
+    else:
+        height=136
+        width=256
+        x=928
+        y=678
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#07B623',width = 2)
+        report_c.create_text(x+100,y+40,text= str(abn),font=('poppins',32,'normal'), anchor = "nw",fill='#07B623')
+    if(an<=20):
+        height=136
+        width=256
+        x=1212
+        y=678
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#FF2929',width = 2)
+        report_c.create_text(x+100,y+40,text= str(an),font=('poppins',32,'normal'), anchor = "nw",fill='#FF2929')
+    else:
+        height=136
+        width=256
+        x=1212
+        y=678
+        report_c.create_rectangle(x, y, x+width, y+height,outline = '#07B623',width = 2)
+        report_c.create_text(x+100,y+40,text= str(an),font=('poppins',32,'normal'), anchor = "nw",fill='#07B623')
+pid=1
+def submit(x,y):
+    global o1,o2,o3,o4,o5,o6,donate_f
+    donate_f.destroy()
+    c1=o1.get()
+    c2=o2.get()
+    c3=o3.get()
+    c4=o4.get()
+    c5=o5.get()
+    c6=-o6.get()
+    if(c2==1 or c3==1 or c5==1):
+        tkinter.messagebox.showinfo("ERROR",  "Donation rejected")
+    elif(c4==1):
+        tkinter.messagebox.showinfo("WAIT",  "Wait for approval")
+    else:
+        if(x==0):
+            c.execute("insert into donation values("+str(pid)+","+str(c1)+","+str(c2)+","+str(c3)+","+str(c4)+","+str(c5)+","+str(c6)+")")
+            c.execute("delete from request where id="+str(y))
+            con.commit()
+        else:
+            c.execute("insert into donation values("+str(pid)+","+str(c1)+","+str(c2)+","+str(c3)+","+str(c4)+","+str(c5)+","+str(c6)+")")
+            c.execute("update blood set quantity=quantity + 1 where bloodtype='"+y+"'")
+            con.commit()
+        tkinter.messagebox.showinfo("SUCCESS",  "Donation done")
+    report()
+def search():
+    global intro1_f,report_f,search_f,search_i,donations,search_home_i,search_report_i,search_search_i,search_user_i,donate_b_i,search_donate_direct_i,donate_f,name,profile_f
+    intro1_f.destroy()
+    login_f.destroy()
+    report_f.destroy()
+    search_f.destroy()
+    request_f.destroy()
+    donate_f.destroy()
+    profile_f.destroy()
+    search_f=Frame(root)
+    search_i = PhotoImage(file = 'donate_bg.png')
+    search_user_i = PhotoImage(file = 'user.png')
+    search_search_i = PhotoImage(file = 'search_r.png')7
+    search_report_i = PhotoImage(file = 'report_b.png')
+    search_home_i = PhotoImage(file = 'home.png')
+    search_f.pack()
+    search_c=Canvas(search_f,height=1080,width=1920,bg='#FFFFFF')
+    search_c.pack(fill = "both", expand = True)
+    search_c.create_image( 0, 0, image = search_i, anchor = "nw")
+    for i in donations:
+        i.delete()
+    c.execute("select * from request")
+    ls=c.fetchall()
+    x=302
+    y=204
+    for d in ls:
+        donations.append(donate(d[0],d[5],d[2],d[3],x,y))
+        x=x+514
+        print(d)
+        if(x>=1660):
+            x=302
+            y=y+200
+    block_f=Frame(search_f,height=168,width=418)
+    donate_b_i=PhotoImage(file = 'donate_b.png')
+    block=Canvas(block_f,height=168,width=418)
+    search_donate_direct_i = PhotoImage(file = 'donate_direct.png')
+    block.create_image( 0, 0, image = search_donate_direct_i, anchor = "nw")
+    search_donate_b = Button ( block,font=('poppins',18,'normal'),image=donate_b_i,command=lambda:donated(1,bloodtype),cursor='hand2',borderwidth = 0)
+    search_donate_b.place(x=180,y=130)
+    block.pack(fill = "both")
+    block_f.place(x=x,y=y)
+    search_home_b=Button(search_c, image = search_home_i,borderwidth = 0,bg='#FFFFFF',command=request,cursor="hand2")
+    search_home_b.place(x=61,y=114)
+    search_search_b=Button(search_c, image = search_search_i,borderwidth = 0,bg='#FFFFFF',command=search,cursor="hand2")
+    search_search_b.place(x=61,y=326)
+    search_report_b=Button(search_c, image = search_report_i,borderwidth = 0,bg='#FFFFFF',command=report,cursor="hand2")
+    search_report_b.place(x=61,y=731)
+    search_user_b=Button(search_c, image = search_user_i,borderwidth = 0,bg='#FFFFFF',command=profile,cursor="hand2")
+    search_user_b.place(x=51,y=893)
+def donated(x,y):
+    global donate_f,search_f,donate_b_i,o1,o2,o3,o4,o5,o6,donate_home_i,donate_report_i,donate_search_i,donate_user_i
+    o1 = IntVar()
+    o2 = IntVar()
+    o3 = IntVar()
+    o4 = IntVar()
+    o5 = IntVar()
+    o6 = IntVar()
+    search_f.destroy()
+    donate_b_i=PhotoImage(file = 'donate.png')
+    donate_f=Frame(root)
+    donate_f.pack()
+    donate_c=Canvas(donate_f,height=1080,width=1920,bg='#FFFFFF')
+    donate_c.pack(fill = "both", expand = True)
+    donate_c.create_image( 0, 0, image = donate_b_i, anchor = "nw")
+    donate_option1_cb=Checkbutton(donate_c, text = "Donated blood in the past ?",
+                      variable = o1,
+                      onvalue = 1,
+                      offvalue = 0,
+                      font=('poppins',20,'normal'),
+                      height = 2,
+                      width = 22,
+                      activebackground='#FF2156',
+                      bg='#FFFFFF')
+    donate_option1_cb.place(x=356,y=264)
+    donate_option2_cb=Checkbutton(donate_c, text = "Are you pregnant or breast feeding?", 
+                      variable = o2,
+                      onvalue = 1,
+                      offvalue = 0,
+                      font=('poppins',20,'normal'),
+                      height = 2,
+                      width = 30,
+                      activebackground='#FF2156',
+                      bg='#FFFFFF')
+    donate_option2_cb.place(x=1056,y=264)
+    donate_option3_cb=Checkbutton(donate_c, text = "Had a meal or snack in the past 4 hrs?", 
+                      variable = o3,
+                      onvalue = 1,
+                      offvalue = 0,
+                      font=('poppins',20,'normal'),
+                      height = 2,
+                      width = 30,
+                      activebackground='#FF2156',
+                      bg='#FFFFFF')
+    donate_option3_cb.place(x=356,y=364)
+    donate_option4_cb=Checkbutton(donate_c, text = "Any previous record of diseases?\n(if yes please see the nurse)   ", 
+                      variable = o4,
+                      onvalue = 1,
+                      offvalue = 0,
+                      font=('poppins',20,'normal'),
+                      height = 2,
+                      width = 30,
+                      activebackground='#FF2156',
+                      bg='#FFFFFF')
+    donate_option4_cb.place(x=1040,y=364)
+    donate_option5_cb=Checkbutton(donate_c, text = "Ingested alcohol in the past 48hrs?", 
+                      variable = o5,
+                      onvalue = 1,
+                      offvalue = 0,
+                      font=('poppins',20,'normal'),
+                      height = 2,
+                      width = 30,
+                      activebackground='#FF2156',
+                      bg='#FFFFFF')
+    donate_option5_cb.place(x=330,y=464)
+    donate_option6_cb=Checkbutton(donate_c, text = "Travelled to a foreign country in the\npast month or year?", 
+                      variable = o6,
+                      onvalue = 1,
+                      offvalue = 0,
+                      font=('poppins',20,'normal'),
+                      height = 2,
+                      width = 30,
+                      activebackground='#FF2156',
+                      bg='#FFFFFF')
+    donate_option6_cb.place(x=1056,y=464)
+    insert_b = Button ( donate_c, width=10,height=1,font=('semi bold',24,'normal'),bg='#C72542',text='SUBMIT',fg='#FFFFFF',command=lambda:submit(x,y))
+    insert_b.place(x=827,y=864)
+    donate_user_i = PhotoImage(file = 'user.png')
+    donate_search_i = PhotoImage(file = 'search.png')
+    donate_report_i = PhotoImage(file = 'report_b.png')
+    donate_home_i = PhotoImage(file = 'home.png')
+    donate_home_b=Button(donate_c, image = donate_home_i,borderwidth = 0,bg='#FFFFFF',command=request,cursor="hand2")
+    donate_home_b.place(x=61,y=114)
+    donate_search_b=Button(donate_c, image = donate_search_i,borderwidth = 0,bg='#FFFFFF',command=search,cursor="hand2")
+    donate_search_b.place(x=61,y=326)
+    donate_report_b=Button(donate_c, image = donate_report_i,borderwidth = 0,bg='#FFFFFF',command=report,cursor="hand2")
+    donate_report_b.place(x=61,y=731)
+    donate_user_b=Button(donate_c, image = donate_user_i,borderwidth = 0,bg='#FFFFFF',command=profile,cursor="hand2")
+    donate_user_b.place(x=51,y=893)
+def request():
+    global intro1_f,request_f,request_i,request_c,request_home_i,request_request_i,request_search_i,request_user_i,request_home_b,request_search_b,request_request_b,intro4_city_bi,intro4_city_b
+    global request_b, request_i, request_f, request_c,request_city, request_bt, request_bt_i,request_city_i,request_button,request_ho,request_ph,request_bl,request_ad, request_ad_i,request_ph_i,request_ho_i,request_bl_i,city_i
+    global login_f,report_f,search_f,donate_f,request_f
+    login_f.destroy()
+    report_f.destroy()
+    search_f.destroy()
+    request_f.destroy()
+    donate_f.destroy()
+    profile_f.destroy()
+    request_i = PhotoImage(file = 'request_bg.png')
+    request_user_i = PhotoImage(file = 'user.png')
+    request_search_i = PhotoImage(file = 'search.png')
+    request_request_i = PhotoImage(file = 'report_b.png')
+    request_home_i = PhotoImage(file = 'home_r.png')
+    request_f=Frame(root) 
+    request_f.pack()
+    request_c=Canvas(request_f,height=1080,width=1920,bg='#FFFFFF')
+    request_c.pack(fill = "both", expand = True)
+    request_c.create_image( 0, 0, image = request_i, anchor = "nw")
+    request_home_b=Button(request_c, image = request_home_i,borderwidth = 0,bg='#FFFFFF',command=request,cursor="hand2")
+    request_home_b.place(x=61,y=114) 
+    request_search_b=Button(request_c, image = request_search_i,borderwidth = 0,bg='#FFFFFF',command=search,cursor="hand2")
+    request_search_b.place(x=61,y=326)
+    request_request_b=Button(request_c, image = request_request_i,borderwidth = 0,bg='#FFFFFF',command=report,cursor="hand2")
+    request_request_b.place(x=61,y=731)
+    request_user_b=Button(request_c, image = request_user_i,borderwidth = 0,bg='#FFFFFF',command=profile,cursor="hand2")
+    request_user_b.place(x=51,y=893)
+    request_city = Entry(request_c,width=15, font=('Poppins', 27, 'normal'), bg='#D6D6D6', bd=0)
+    request_city.place(x=810, y=319.2)
+    request_city.insert(0,"City")
+    request_ho = Entry(request_c, width=15, font=('Poppins', 27, 'normal'), bg='#D6D6D6', bd=0)
+    request_ho.place(x=810, y=396.2)
+    request_ho.insert(0,"Hospital")
+    request_bt = Entry(request_c, width=15, font=('Poppins', 27, 'normal'), bg='#D6D6D6', bd=0)
+    request_bt.place(x=810, y=473.2)
+    request_bt.insert(0,"Blood Type")
+    request_ph = Entry(request_c, width=15, font=('Poppins', 27, 'normal'), bg='#D6D6D6', bd=0)
+    request_ph.place(x=810, y=551.2)
+    request_ph.insert(0,"Mobile")
+    request_city_i = PhotoImage(file="address.png")
+    request_c.create_image(770, 326, image=request_city_i, anchor="nw")
+    request_ho_i = PhotoImage(file="la_city.png")
+    request_c.create_image(770, 403, image=request_ho_i, anchor="nw")
+    request_bt_i = PhotoImage(file="blood.png")
+    request_c.create_image(770, 480, image=request_bt_i, anchor="nw")
+    request_ph_i = PhotoImage(file="phone.png")
+    request_c.create_image(770, 558, image=request_ph_i, anchor="nw")
+    request_b = PhotoImage(file="request_bi.png")
+    request_button = Button(request_c, image=request_b, borderwidth=0, command=request_blood, bg='#FFFFFF', text='REQUEST', cursor="hand2")
+    request_button.place(x=830, y=705)
+def request_blood():
+    global request_city,request_ho,request_bt,request_ph,pid
+    s1=request_city.get()
+    s2=request_ho.get()
+    s3=request_bt.get()
+    s4=request_ph.get()
+    bg=s3
+    if((bg=='B+' and bp==0) or (bg=='A+' and ap==0) or (bg=='O+' and op==0)or (bg=='AB+' and abp==0) or (bg=='B-' and bn==0) or (bg=='A-' and an==0) or (bg=='AB-' and abn==0) or (bg=='O-' and on==0)):
+        c.execute("insert into request values("+str(pid)+",'"+s1+"','"+s2+"','"+s3+"','"+s4+"','"+name+"')")
+        con.commit()
+    else:
+        c.execute("update blood set quantity=quantity - 1 where bloodtype='"+bg+"'")
+    report()
+def profile():
+    global intro4_f,profile_f,profile_bg_i,profile_user_i,profile_search_i,profile_report_i,profile_home_i,profile_profile_i,name,address
+    intro4_f.destroy()
+    login_f.destroy()
+    report_f.destroy()
+    search_f.destroy()
+    request_f.destroy()
+    donate_f.destroy()
+    profile_f.destroy()
+    profile_bg_i = PhotoImage(file = "profile_bg.png")
+    profile_f=Frame(root)
+    profile_f.pack()
+    profile_c=Canvas(profile_f,height=1080,width=1920,bg='#FFFFFF')
+    profile_c.create_image( 0, 0, image = profile_bg_i, anchor = "nw")
+    profile_c.pack(fill = "both", expand = True)
+    profile_user_i = PhotoImage(file = 'user_r.png')
+    profile_search_i = PhotoImage(file = 'search.png')
+    profile_report_i = PhotoImage(file = 'report_b.png')
+    profile_home_i = PhotoImage(file = 'home.png')
+    profile_profile_i = PhotoImage(file = 'profile_img.png')
+    profile_home_b=Button(profile_c, image = profile_home_i,borderwidth = 0,bg='#FFFFFF',command=request,cursor="hand2")
+    profile_home_b.place(x=61,y=114)
+    profile_search_b=Button(profile_c, image = profile_search_i,borderwidth = 0,bg='#FFFFFF',command=search,cursor="hand2")
+    profile_search_b.place(x=61,y=326)
+    profile_report_b=Button(profile_c, image = profile_report_i,borderwidth = 0,bg='#FFFFFF',command=report,cursor="hand2")
+    profile_report_b.place(x=61,y=731)
+    profile_user_b=Button(profile_c, image = profile_user_i,borderwidth = 0,bg='#FFFFFF',command=profile,cursor="hand2")
+    profile_user_b.place(x=51,y=893)
+    profile_c.create_image(323 , 215, image = profile_profile_i, anchor = "nw")
+    profile_c.create_text(700,260,text= name,font=('poppins',40,'normal'), anchor = "nw",fill='#FF2929')
+    profile_c.create_text(700,339,text= address,font=('poppins',24,'normal'), anchor = "nw",fill='#FF2929')
+donations=[]
+intro1_i = PhotoImage(file = "intro.png")
+intro1_f=Frame(root)
+intro1_f.pack()
+login_f = Frame(root)
+search_f=Frame(root)
+request_f=Frame(root) 
+report_f=Frame(root)
+register_f = Frame(root)
+search_f=Frame(root)
+report_f=Frame(root)
+donate_f=Frame(root)
+profile_f=Frame(root)
+intro1_c=Canvas(intro1_f,height=1080,width=1920,bg='BLUE')
+intro1_c.pack(fill = "both", expand = True)
+intro1_login_b=Button(intro1_c, image = intro1_i,borderwidth = 0,command=intro2,cursor="hand2")
+intro1_login_b.place(x=0,y=0)
+root.mainloop()
+
+
+
+
+
+
+
+
+
+
+3.1 FUNCTIONS USED IN THE PROGRAM
+
+
+A naming convention is used where all variables are of the form &lt;name of the
+frame&gt;_&lt;purpose&gt;_&lt;type eg. I for image&gt;
+
+
+Login ():To create the GUI of the login page and to call login_sql function if the login button is clicked.
+Login_sql():To check if the login details are satisfied using the user table and to store the values into
+corresponding global variables. If conditions satisfy, call the report function.
+Register_sql():To enter the data into the user table and call the login function once successful.
+Register():To create the GUI of the login page and to call register_sql function if the register button is clicked.
+Intro3():To create the GUI of the introduction page and call the intro4 function if the next or skip button is
+pressed.
+Intro2():To create the GUI of the introduction page and call the intro4 function if the skip button is pressed
+and to call the intro3 function if the next button is pressed.
+Intro4():To create the GUI for the page where the user can choose between login and register and call the
+corresponding functions if the button is pressed.
+Donate class:
+To create a frame that can be dynamically placed depending on the values passed as a constructor.
+Report():To get values from the blood table and store it to their corresponding variables. And to create the
+report GUI.
+Submit():To insert the value from the donation table if the conditions satisfy and to make the necessary
+changes to the blood and request tables based on where the blood goes.
+Search():Display all the donation request options and call the donated function if the donate button is clicked.
+Donated():Used to accept or reject the donation based on the output of the questionnaire provided in the GUI.
+And calls the submit function when the submit button is pressed.
+Request():To print the GUI to accept a blood request and call the request_blood function if the submit
+the button is pressed.
+request_blood():To allocate blood if blood is available in the blood bank or send it to the request table if it is not
+present and to call the report function once completed.
+Profile():To display the profile of the user as a GUI.
+__main__():to create all the frames used in the application and to display the loading screen. If the user presses
+anywhere in the frame call function intro2.
+
+
+
+
+
+
+4.FRAMES
+
+
+  
+
+The user will first be directed to the loading screen where they can click anywhere on the screen to proceed to the next screen.
+  
+
+  
+
+Then we will be directed to the introduction pages where the user will be promoted to donate blood. The user can either choose to skip these frames or read through them to get to the loading or register screen.
+  
+
+Here you can choose to either login to an existing account or register a new account.
+  
+
+If you click register, you will be directed to a window where you can enter the details like name, mail, password, etc. This is stored in a MySQL database and will then be directed to the login screen. A unique patient ID will be generated on registration.
+  
+
+If you click the register button or complete the registration, you will be directed to the login page. Where you can log in using the user's mail and password. This will be checked with the database and the user will be logged in.  
+Once logged in, the user will be directed to the report screen where a report of how much blood from each blood group is available will be shown. The colour will be red if the amount is less than 20 and green otherwise.
+You can then choose from four windows reports (the one displayed currently), search, profile, and home.
+  
+
+Here you can view your profile i.e. name and location.
+  
+
+If you click on the search button you will be directed to a page where you can either donate blood to a person if you are compatible or donate directly to the blood bank.  
+The user will then be requested to fill out a form and will be asked to select the options applicable to you. If the conditions satisfy, the donation will be accepted, or else it will be rejected.
+  
+
+If you click on the home button you will be asked to enter the details for a blood request. When submit is clicked and if the blood is available they will be asked to collect it from the blood bank else it will be added to the queue.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.CONCLUSION
+
+
+A blood bank management system was implemented to maintain the details of the donor/receiver. It provides an efficient way for the donors/receivers to register and communicate through hospitals. The project does effective management of blood banks, where a  user can log in and view the availability of different blood groups if they are in need, or otherwise, may donate blood if they want to. Receivers can easily find blood donors near them by posting a request. Users can view their profile which includes details about them. The one without the login credentials can register for the same and view the availability of different blood groups. So this project seems useful in certain critical situations where people are in immediate need of blood.
+
+
+
+
+
+
+
+
+6.REFERENCES
+
+
+* https://www.tutorialspoint.com/python
+* https://www.w3schools.com/python/python_mysql_getstarted.asp
+* https://www.tutorialspoint.com/sql
