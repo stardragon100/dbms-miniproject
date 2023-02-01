@@ -641,7 +641,7 @@ def request_blood():
         tkinter.messagebox.showinfo("SUCCESS",  "Blood will be transferred.")
     report()
 def profile():
-    global intro4_f,profile_f,profile_bg_i,profile_user_i,profile_search_i,profile_report_i,profile_home_i,profile_profile_i,name,address
+    global intro4_f,profile_f,profile_bg_i,profile_user_i,profile_search_i,profile_report_i,profile_home_i,profile_profile_i,name,address,profile_b_i
     intro4_f.destroy()
     login_f.destroy()
     report_f.destroy()
@@ -671,6 +671,14 @@ def profile():
     profile_c.create_image(323 , 215, image = profile_profile_i, anchor = "nw")
     profile_c.create_text(700,260,text= name,font=('poppins',40,'normal'), anchor = "nw",fill='#FF2929')
     profile_c.create_text(700,339,text= address,font=('poppins',24,'normal'), anchor = "nw",fill='#FF2929')
+    str=bloodtype[0:-1]
+    if(bloodtype[-1]=='+'):
+        str=str+'P'
+    else:
+        str=str+'N'
+    print(str)
+    profile_b_i=PhotoImage(file = str+'.png')
+    profile_c.create_image( 1100, 400, image = profile_b_i, anchor = "nw")
 
 donations=[]
 
