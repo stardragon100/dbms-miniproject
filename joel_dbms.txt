@@ -1,0 +1,31 @@
+create table request(id INT UNSIGNED,
+PRIMARY KEY (id),
+city varchar(50),
+Hospital varchar(50),
+bloodtype varchar(5),
+Mobile varchar(12),
+name varchar(50)
+);
+insert into request values(1,'Palluruthy','Fathima Hospital','O+','9539825825');
+insert into request values(2,'Kadavanthra','Akshaya Hospital','B+','9061690616');
+
+create table blood(bloodtype varchar(5),
+PRIMARY KEY (bloodtype),
+quantity int);
+insert into blood values('O+',50);
+insert into blood values('A+',45);
+insert into blood values('B+',30);
+insert into blood values('AB+',10);
+insert into blood values('O-',40);
+insert into blood values('A-',30);
+insert into blood values('B-',0);
+insert into blood values('AB-',0);
+
+create table donation(id int,
+q1 int,
+q2 int,
+q3 int,
+q4 int,
+q5 int,
+q6 int
+);

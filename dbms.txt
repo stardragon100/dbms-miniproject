@@ -1,0 +1,95 @@
+create table suppliers(SuppNo varchar(10) primary key, SName varchar(10),SAddress varchar(20), SCity varchar(10), SState varchar(10), SPhone varchar(10), SBalance dec(10,2));
+create table orders1(ordno varchar(10) primary key, OrdDate date, OrdSuppno varchar(10), OrdPartno varchar(10),ordqty number);
+create table parts(PartNo varchar(10) primary key, PName varchar(10), Qty number,Price dec(10,2));
+alter table orders1 add constraint fk_2 foreign key(OrdSuppno) references suppliers(SuppNo);
+alter table orders1 add constraint fk_3 foreign key(OrdPartno) references parts(PartNo);
+insert into suppliers values('S001','Joel','Thoppumpady','Kochi','Kerala','9539825825',1000);
+insert into suppliers values('S002','Joseph','Kadavanthra','Banglore','Karnataka','9061690616',1100);
+insert into parts values('P001','Screw',1,5);
+
+create or replace trigger limit before insert on orders1
+for each row
+when(new.ordqty>100)
+begin
+if :new.OrdSuppno='S002' then
+raise_application_error(-20133,'Order quantity large');
+else
+dbms_output.put_line('Order placed');
+end if;
+end;
+/
+
+create or replace trigger same_city before insert on suppliers
+for each row
+declare
+city number;
+begin
+select count(*) into city from suppliers where SCity=:new.SCity;
+if city=0 then
+dbms_output.put_line('Supplier added successfully');
+else
+raise_application_error(-20134,'Supplier from same  city already exist');
+end if;
+end;
+/
+
+
+create or replace trigger same_city before insert on orders1
+for each row
+declare
+bal Supplier.SBalance%type;
+qty orders1.ordqty%type;
+pri parts.Price%type;
+qtyo parts.qty%type;
+cou number;
+tot number;
+begin
+qty:=:new.ordqty;
+select count(*) into cou from suppliers where SuppNo=:new.OrdSuppno;
+if cou>0 then
+select SBalance into bal from suppliers where SuppNo=:new.OrdSuppno;
+select qty into qtyo from parts where PartNo=:new.OrdPartno;
+select price into pri from parts where PartNo=:new.OrdPartno;
+tot:=qty*pri;
+if qtyo>1 then
+pri:=pri/qtyo;
+end if;
+else
+dbms_output.put_line('Supplier not found');
+end if;
+if tot>bal then
+raise_application_error(-20135,'Insufficient balance');
+else
+dbms_output.put_line('Order placed');
+end if;
+end;
+/
+
+declare
+bal employee.salary%type;
+supp employee.empid%type;
+tot number;
+cursor cursor1 is select empid,salary from employee;
+begin
+tot:=0;
+open cursor1;
+fetch cursor1 into supp,bal;
+while cursor1%found
+loop
+if bal<10000 then
+update employee set salary=15000 where empid=supp;
+elsif bal>=10000 and bal<30000 then
+update employee set salary=35000 where empid=supp;
+elsif bal>=30000 and bal<60000 then
+update employee set salary=65000 where empid=supp;
+elsif bal<=60000 then
+update employee set salary=bal where empid=supp;
+exit;
+end if;
+fetch cursor1 into supp,bal;
+end loop;
+tot:=cursor1%rowcount;
+dbms_output.put_line('total rows updated='||tot);
+close cursor1;
+end;
+/
